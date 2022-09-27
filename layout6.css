@@ -1,0 +1,74 @@
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "nav header"
+        "nav main"
+        "nav footer ";
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 150px 1fr;
+}
+
+header{
+grid-area: header;
+background-color: tomato;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 2rem;
+}
+
+nav{
+grid-area: nav;
+background-color: thistle;
+display: flex;
+display: grid;
+justify-content: space-evenly;
+align-items: center;
+font-size: 2rem;
+
+}
+main{
+grid-area: main;
+display: grid;
+grid-template-areas: "article aside";
+grid-template-columns: 5fr .5fr;
+
+}
+
+article{
+grid-area: article;
+background-color:rgb(151, 233, 144);
+display: flex;
+display: grid;
+justify-content: center;
+align-items: center;
+font-size: 2rem;
+}
+
+aside{
+grid-area: aside;
+background-color:wheat;
+display: flex;
+display: grid;
+gap: 20px;
+justify-content: center;
+align-items: center;
+font-size: 2rem;
+}
+
+footer{
+grid-area: footer;
+background-color: violet;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 2rem;
+}
+
+li{
+    background-color:red;
+    width: 80px;
+    height: 80px;
+    list-style: none;
+}

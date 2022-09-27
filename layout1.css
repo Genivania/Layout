@@ -1,0 +1,29 @@
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows:10% 80% 10%;
+}
+
+header{
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+main{
+    background-color:yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+footer{
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
